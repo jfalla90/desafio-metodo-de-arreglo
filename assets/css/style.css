@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsla(0, 26%, 91%, 0.979);
+}
+
+.todolist {
+    width: 40em;
+    border: 1px solid hsla(0, 0%, 0%, 0.219);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px hsla(0, 0%, 0%, 0.253);
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.button{
+    background-color: rgba(83, 197, 83, 0.651);
+    padding: 3px;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.pieTodoList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}

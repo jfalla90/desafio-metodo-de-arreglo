@@ -7,6 +7,29 @@
     <title>Desafío - To do List</title>
 </head>
 <body>
+    <div class="todolist">
+        <h1>To-do List</h1>
+        <hr/>
+        <h4>Nueva Tarea</h4>
+        <input type="text" id="listaTarea">
+        <button class="button" value="number">Agregar</button>
+        <div class="pieTodoList">
+            <div class="etiquetaP">
+                <p>Total: <span id="total"></span></p>
+                <p>Realizadas: <span id="realizadas"></span></p>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tarea</th>
+                    </tr>
+                    <tr id="listaTable"></tr>
+                </table>
+            </div> 
+        </div>   
+    </div>
+
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
