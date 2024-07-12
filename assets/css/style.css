@@ -1,34 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: hsla(0, 26%, 91%, 0.979);
+    font-family: sans-serif;
 }
 
-.todolist {
-    width: 40em;
-    border: 1px solid hsla(0, 0%, 0%, 0.219);
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.card-todo-list{
+    width: 25em;
+    height: 25em;
+    border: 1px solid hsla(0, 0%, 0%, 0.021);
+    margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 5px 5px hsla(0, 0%, 0%, 0.253);
-    margin-top: 10px;
-    margin-left: 50px;
+    background-color: rgb(228, 203, 171);
+    box-shadow: 1px 2px 5px black;
+}
+
+h1 {
     text-align: center;
+    border-bottom: 1px solid black;
 }
 
-.button{
-    background-color: rgba(83, 197, 83, 0.651);
-    padding: 3px;
-    color: black;
-    border-radius: 5px;
-    border: 1px solid rgb(158, 149, 149);
+.tareas {
+    text-align: center;
+    padding: 10px;
 }
 
+.tareas input{
+    border-radius: 10px;
+    border: 0.5px solid rgb(155, 152, 152);
+    height: 25px;
+}
 
-.pieTodoList{
+.tareas .buttonAgregar{
+    padding: 5px;
+    background-color: chartreuse;
+    color: rgb(11, 12, 11);
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 0.5px solid rgb(155, 152, 152);
+}
+
+.resumen{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 10px;
+    background-color: hsla(115, 50%, 77%, 0.89);
     margin-top: 10px;
+    border-radius: 10px;
+    border: 0.5px solid hsla(0, 1%, 21%, 0.795);
+}
+
+.resumen .conteo{
+    padding: 5px;
+    align-content: center;
+    border-radius: 10px;
+
+}
+
+.listaTareas {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.buttonEliminar {
+    color: red;
+    background-color: white;
+    border: 0.5px solid white;
+    padding: 3px;
+    font-weight: 900;
+    border-radius: 5px;
 }

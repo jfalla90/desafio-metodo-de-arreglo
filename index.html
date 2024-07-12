@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Desafío - To do List</title>
-</head>
-<body>
-    <div class="todolist">
-        <h1>To-do List</h1>
-        <hr/>
-        <h4>Nueva Tarea</h4>
-        <input type="text" id="listaTarea">
-        <button class="button" value="number.">Agregar</button>
-        <div class="pieTodoList">
-            <div class="etiquetaP">
-                <p>Total agregadas: <span id="totalAgregadas"></span></p>
-                <p>Realizadas: <span id="realizadas"></span></p>
-                <p>Por realizar: <span id="porRealizar"></span></p>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 5 - Métodos de Arreglos</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="principal">
+        <div class="card-todo-list">
+            <h1>To Do List</h1>
+            <div class="tareas">
+                <h4>Nueva Tarea</h4>
+                <input class="inputTarea" type="text" placeholder="  Ingresa aquí tu tarea"/>
+                <button class="buttonAgregar">Agregar</button>
             </div>
-        </div>   
-    </div>
+            <div class="resumen">
+                <div class="conteo">
+                <h5>Total: <span id="total"></span></h5>
+                <h5>Realizadas: <span id="realizadas"></span></h5>
+                <h5>Por realizar: <span id="noRealizadas"></span></h5>
+                </div>
+                <table class="listaTareas"></table>
+            </div>
+        </div>
+    </main>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
